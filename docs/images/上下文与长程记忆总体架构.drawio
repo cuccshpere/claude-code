@@ -1,0 +1,139 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="2m2tdzdBEAhpJrLp9Ep_">
+    <mxGraphModel dx="2293" dy="1066" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="LIcoewHpS6GMWqB820lM-1" parent="1" style="rounded=0;arcSize=3;fillColor=none;strokeColor=#B9B3AB;strokeWidth=1.5;pointerEvents=0;" value="" vertex="1">
+          <mxGeometry height="1030" width="1614" x="250" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="LIcoewHpS6GMWqB820lM-2" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;fontStyle=1;fontSize=32;fontColor=#1F1F1C;" value="上下文与长程记忆总体架构" vertex="1">
+          <mxGeometry height="50" width="1280" x="410" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="LIcoewHpS6GMWqB820lM-3" parent="1" style="rounded=1;whiteSpace=wrap;arcSize=4;fillColor=#FAF8F4;strokeColor=#8C867F;strokeWidth=2;fontSize=18;fontStyle=1;fontColor=#5F5A54;swimlane;startSize=63;horizontal=1;html=1;" value="&lt;font style=&quot;font-size: 22px;&quot;&gt;运行时执行面&lt;/font&gt;" vertex="1">
+          <mxGeometry height="860" width="960" x="290" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="LIcoewHpS6GMWqB820lM-4" parent="LIcoewHpS6GMWqB820lM-3" style="rounded=1;whiteSpace=wrap;arcSize=6;fillColor=#FAF8F4;strokeColor=#8C867F;strokeWidth=1.8;fontSize=16;fontStyle=1;fontColor=#5F5A54;swimlane;startSize=50;horizontal=1;html=1;" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;交互与主循环&lt;/font&gt;" vertex="1">
+          <mxGeometry height="250" width="880" x="40" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="LIcoewHpS6GMWqB820lM-5" parent="LIcoewHpS6GMWqB820lM-4" style="rounded=1;whiteSpace=wrap;arcSize=50;fillColor=#F8E9E1;strokeColor=#D88966;strokeWidth=1.8;fontColor=#D88966;fontSize=20;fontStyle=1;" value="用户 / REPL" vertex="1">
+          <mxGeometry height="60" width="160" x="30" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="LIcoewHpS6GMWqB820lM-6" parent="LIcoewHpS6GMWqB820lM-4" style="rounded=1;whiteSpace=wrap;arcSize=10;fillColor=#EEEAF9;strokeColor=#9A90D6;strokeWidth=1.8;fontColor=#2D2B28;fontSize=20;" value="QueryEngine" vertex="1">
+          <mxGeometry height="70" width="180" x="260" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="LIcoewHpS6GMWqB820lM-7" parent="LIcoewHpS6GMWqB820lM-4" style="rounded=1;whiteSpace=wrap;arcSize=10;fillColor=#D7E6DC;strokeColor=#7FB08F;strokeWidth=1.8;fontColor=#2D2B28;fontSize=20;" value="query.ts 主循环" vertex="1">
+          <mxGeometry height="70" width="210" x="500" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="LIcoewHpS6GMWqB820lM-8" parent="LIcoewHpS6GMWqB820lM-4" style="rounded=1;whiteSpace=wrap;arcSize=10;fillColor=#CFE8D7;strokeColor=#71AE88;strokeWidth=1.8;fontColor=#2D2B28;fontSize=20;" value="模型 API / Streaming" vertex="1">
+          <mxGeometry height="70" width="170" x="760" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="LIcoewHpS6GMWqB820lM-9" edge="1" parent="LIcoewHpS6GMWqB820lM-4" source="LIcoewHpS6GMWqB820lM-5" style="endArrow=open;endSize=14;edgeStyle=orthogonalEdgeStyle;strokeColor=#7A756E;strokeWidth=1.8;rounded=1;" target="LIcoewHpS6GMWqB820lM-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LIcoewHpS6GMWqB820lM-10" edge="1" parent="LIcoewHpS6GMWqB820lM-4" source="LIcoewHpS6GMWqB820lM-6" style="endArrow=open;endSize=14;edgeStyle=orthogonalEdgeStyle;strokeColor=#7A756E;strokeWidth=1.8;rounded=1;" target="LIcoewHpS6GMWqB820lM-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LIcoewHpS6GMWqB820lM-11" edge="1" parent="LIcoewHpS6GMWqB820lM-4" source="LIcoewHpS6GMWqB820lM-7" style="endArrow=open;endSize=14;edgeStyle=orthogonalEdgeStyle;strokeColor=#7A756E;strokeWidth=1.8;rounded=1;" target="LIcoewHpS6GMWqB820lM-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LIcoewHpS6GMWqB820lM-12" parent="LIcoewHpS6GMWqB820lM-3" style="rounded=1;whiteSpace=wrap;arcSize=6;fillColor=#FAF8F4;strokeColor=#8C867F;strokeWidth=1.8;fontSize=16;fontStyle=1;fontColor=#5F5A54;swimlane;startSize=50;horizontal=1;html=1;" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;上下文装配与预算治理&lt;/font&gt;" vertex="1">
+          <mxGeometry height="210" width="880" x="40" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="LIcoewHpS6GMWqB820lM-13" parent="LIcoewHpS6GMWqB820lM-12" style="rounded=1;whiteSpace=wrap;arcSize=10;fillColor=#EAF4FB;strokeColor=#6FA8D6;strokeWidth=1.8;fontColor=#2D2B28;fontSize=18;" value="System Prompt&#xa;User Context&#xa;System Context" vertex="1">
+          <mxGeometry height="90" width="220" x="30" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="LIcoewHpS6GMWqB820lM-14" parent="LIcoewHpS6GMWqB820lM-12" style="rounded=1;whiteSpace=wrap;arcSize=10;fillColor=#EEEAF9;strokeColor=#9A90D6;strokeWidth=1.8;fontColor=#2D2B28;fontSize=18;" value="Token Budget&#xa;Auto Compact&#xa;Session Memory Compact" vertex="1">
+          <mxGeometry height="90" width="230" x="320" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="LIcoewHpS6GMWqB820lM-15" parent="LIcoewHpS6GMWqB820lM-12" style="rounded=1;whiteSpace=wrap;arcSize=10;fillColor=#D7E6DC;strokeColor=#7FB08F;strokeWidth=1.8;fontColor=#2D2B28;fontSize=18;" value="Relevant Memory&#xa;Prefetch / Recall" vertex="1">
+          <mxGeometry height="90" width="220" x="620" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="LIcoewHpS6GMWqB820lM-16" edge="1" parent="LIcoewHpS6GMWqB820lM-12" source="LIcoewHpS6GMWqB820lM-13" style="endArrow=open;endSize=14;edgeStyle=orthogonalEdgeStyle;strokeColor=#9A948C;strokeWidth=1.6;rounded=1;dashed=1;dashPattern=6 6;" target="LIcoewHpS6GMWqB820lM-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LIcoewHpS6GMWqB820lM-17" edge="1" parent="LIcoewHpS6GMWqB820lM-12" source="LIcoewHpS6GMWqB820lM-14" style="endArrow=open;endSize=14;edgeStyle=orthogonalEdgeStyle;strokeColor=#9A948C;strokeWidth=1.6;rounded=1;dashed=1;dashPattern=6 6;" target="LIcoewHpS6GMWqB820lM-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LIcoewHpS6GMWqB820lM-18" parent="LIcoewHpS6GMWqB820lM-3" style="rounded=1;whiteSpace=wrap;arcSize=6;fillColor=#FAF8F4;strokeColor=#8C867F;strokeWidth=1.8;fontSize=16;fontStyle=1;fontColor=#5F5A54;swimlane;startSize=50;horizontal=1;html=1;" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;工具执行与回注&lt;/font&gt;" vertex="1">
+          <mxGeometry height="190" width="880" x="40" y="630" as="geometry" />
+        </mxCell>
+        <mxCell id="LIcoewHpS6GMWqB820lM-19" parent="LIcoewHpS6GMWqB820lM-18" style="rounded=1;whiteSpace=wrap;arcSize=10;fillColor=#E6E2DA;strokeColor=#8C867F;strokeWidth=1.8;fontColor=#2D2B28;fontSize=18;" value="Tool Registry&#xa;File / Search / Bash / MCP" vertex="1">
+          <mxGeometry height="80" width="240" x="40" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="LIcoewHpS6GMWqB820lM-20" parent="LIcoewHpS6GMWqB820lM-18" style="rounded=1;whiteSpace=wrap;arcSize=10;fillColor=#EAF4FB;strokeColor=#6FA8D6;strokeWidth=1.8;fontColor=#2D2B28;fontSize=18;" value="Streaming Tool Executor" vertex="1">
+          <mxGeometry height="80" width="220" x="340" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="LIcoewHpS6GMWqB820lM-21" parent="LIcoewHpS6GMWqB820lM-18" style="rounded=1;whiteSpace=wrap;arcSize=10;fillColor=#D7E6DC;strokeColor=#7FB08F;strokeWidth=1.8;fontColor=#2D2B28;fontSize=18;" value="Attachments&#xa;Relevant Memories&#xa;Tool Results" vertex="1">
+          <mxGeometry height="80" width="210" x="630" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="LIcoewHpS6GMWqB820lM-22" edge="1" parent="LIcoewHpS6GMWqB820lM-18" source="LIcoewHpS6GMWqB820lM-19" style="endArrow=open;endSize=14;edgeStyle=orthogonalEdgeStyle;strokeColor=#7A756E;strokeWidth=1.8;rounded=1;" target="LIcoewHpS6GMWqB820lM-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LIcoewHpS6GMWqB820lM-23" edge="1" parent="LIcoewHpS6GMWqB820lM-18" source="LIcoewHpS6GMWqB820lM-20" style="endArrow=open;endSize=14;edgeStyle=orthogonalEdgeStyle;strokeColor=#7FB08F;strokeWidth=1.8;rounded=1;" target="LIcoewHpS6GMWqB820lM-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LIcoewHpS6GMWqB820lM-24" parent="1" style="rounded=1;whiteSpace=wrap;arcSize=4;fillColor=#FAF8F4;strokeColor=#8C867F;strokeWidth=2;fontSize=18;fontStyle=1;fontColor=#5F5A54;swimlane;startSize=63;horizontal=1;html=1;" value="&lt;font style=&quot;font-size: 22px;&quot;&gt;记忆与治理面&lt;/font&gt;" vertex="1">
+          <mxGeometry height="860" width="530" x="1290" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="LIcoewHpS6GMWqB820lM-25" parent="LIcoewHpS6GMWqB820lM-24" style="rounded=1;whiteSpace=wrap;arcSize=6;fillColor=#FAF8F4;strokeColor=#8C867F;strokeWidth=1.8;fontSize=16;fontStyle=1;fontColor=#5F5A54;swimlane;startSize=50;horizontal=1;html=1;" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;记忆控制面&lt;/font&gt;" vertex="1">
+          <mxGeometry height="300" width="470" x="30" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="LIcoewHpS6GMWqB820lM-26" parent="LIcoewHpS6GMWqB820lM-25" style="rounded=1;whiteSpace=wrap;arcSize=10;fillColor=#EAF4FB;strokeColor=#6FA8D6;strokeWidth=1.8;fontColor=#2D2B28;fontSize=18;" value="loadMemoryPrompt&#xa;buildCombinedMemoryPrompt" vertex="1">
+          <mxGeometry height="90" width="190" x="30" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="LIcoewHpS6GMWqB820lM-27" parent="LIcoewHpS6GMWqB820lM-25" style="rounded=1;whiteSpace=wrap;arcSize=10;fillColor=#D7E6DC;strokeColor=#7FB08F;strokeWidth=1.8;fontColor=#2D2B28;fontSize=18;" value="findRelevantMemories&#xa;side-query 选择器" vertex="1">
+          <mxGeometry height="90" width="190" x="250" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="LIcoewHpS6GMWqB820lM-28" parent="LIcoewHpS6GMWqB820lM-25" style="rounded=1;whiteSpace=wrap;arcSize=10;fillColor=#EEEAF9;strokeColor=#9A90D6;strokeWidth=1.8;fontColor=#2D2B28;fontSize=18;" value="extractMemories&#xa;异步沉淀引擎" vertex="1">
+          <mxGeometry height="80" width="190" x="30" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="LIcoewHpS6GMWqB820lM-29" parent="LIcoewHpS6GMWqB820lM-25" style="rounded=1;whiteSpace=wrap;arcSize=10;fillColor=#F3E4DA;strokeColor=#C88E6A;strokeWidth=1.8;fontColor=#2D2B28;fontSize=18;" value="Team Sync / Secret Guard&#xa;Snapshot / Scope Routing" vertex="1">
+          <mxGeometry height="80" width="190" x="250" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="LIcoewHpS6GMWqB820lM-30" edge="1" parent="LIcoewHpS6GMWqB820lM-25" source="LIcoewHpS6GMWqB820lM-26" style="endArrow=open;endSize=14;edgeStyle=orthogonalEdgeStyle;strokeColor=#7A756E;strokeWidth=1.8;rounded=1;" target="LIcoewHpS6GMWqB820lM-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LIcoewHpS6GMWqB820lM-31" edge="1" parent="LIcoewHpS6GMWqB820lM-25" source="LIcoewHpS6GMWqB820lM-28" style="endArrow=open;endSize=14;edgeStyle=orthogonalEdgeStyle;strokeColor=#8E8982;strokeWidth=1.8;rounded=1;curved=1;" target="LIcoewHpS6GMWqB820lM-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LIcoewHpS6GMWqB820lM-32" parent="LIcoewHpS6GMWqB820lM-24" style="rounded=1;whiteSpace=wrap;arcSize=6;fillColor=#FAF8F4;strokeColor=#8C867F;strokeWidth=1.8;fontSize=16;fontStyle=1;fontColor=#5F5A54;swimlane;startSize=50;horizontal=1;html=1;" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;记忆存储面&lt;/font&gt;" vertex="1">
+          <mxGeometry height="360" width="470" x="30" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="LIcoewHpS6GMWqB820lM-33" parent="LIcoewHpS6GMWqB820lM-32" style="shape=cylinder;whiteSpace=wrap;boundedLbl=1;fillColor=#E6E2DA;strokeColor=#8C867F;strokeWidth=1.8;fontColor=#2D2B28;fontSize=18;" value="Auto Memory&#xa;MEMORY.md + Topic Files" vertex="1">
+          <mxGeometry height="90" width="190" x="20" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="LIcoewHpS6GMWqB820lM-34" parent="LIcoewHpS6GMWqB820lM-32" style="shape=cylinder;whiteSpace=wrap;boundedLbl=1;fillColor=#EAF4FB;strokeColor=#6FA8D6;strokeWidth=1.8;fontColor=#2D2B28;fontSize=18;" value="Team Memory&#xa;Shared Dir + Sync API" vertex="1">
+          <mxGeometry height="90" width="190" x="250" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="LIcoewHpS6GMWqB820lM-35" parent="LIcoewHpS6GMWqB820lM-32" style="shape=cylinder;whiteSpace=wrap;boundedLbl=1;fillColor=#D7E6DC;strokeColor=#7FB08F;strokeWidth=1.8;fontColor=#2D2B28;fontSize=18;" value="Session Memory&#xa;Compact Summary Layer" vertex="1">
+          <mxGeometry height="90" width="190" x="20" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="LIcoewHpS6GMWqB820lM-36" parent="LIcoewHpS6GMWqB820lM-32" style="shape=cylinder;whiteSpace=wrap;boundedLbl=1;fillColor=#EEEAF9;strokeColor=#9A90D6;strokeWidth=1.8;fontColor=#2D2B28;fontSize=18;" value="Agent Memory&#xa;User / Project / Local" vertex="1">
+          <mxGeometry height="90" width="190" x="250" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="LIcoewHpS6GMWqB820lM-37" edge="1" parent="1" source="LIcoewHpS6GMWqB820lM-27" style="endArrow=open;endSize=14;edgeStyle=orthogonalEdgeStyle;strokeColor=#7FB08F;strokeWidth=1.8;rounded=1;" target="LIcoewHpS6GMWqB820lM-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LIcoewHpS6GMWqB820lM-38" edge="1" parent="1" source="LIcoewHpS6GMWqB820lM-7" style="endArrow=open;endSize=14;edgeStyle=orthogonalEdgeStyle;strokeColor=#7A756E;strokeWidth=1.8;rounded=1;" target="LIcoewHpS6GMWqB820lM-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LIcoewHpS6GMWqB820lM-39" edge="1" parent="1" source="LIcoewHpS6GMWqB820lM-26" style="endArrow=open;endSize=14;edgeStyle=orthogonalEdgeStyle;strokeColor=#6FA8D6;strokeWidth=1.8;rounded=1;" target="LIcoewHpS6GMWqB820lM-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LIcoewHpS6GMWqB820lM-40" edge="1" parent="1" source="LIcoewHpS6GMWqB820lM-14" style="endArrow=open;endSize=14;edgeStyle=orthogonalEdgeStyle;strokeColor=#7FB08F;strokeWidth=1.8;rounded=1;" target="LIcoewHpS6GMWqB820lM-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LIcoewHpS6GMWqB820lM-41" edge="1" parent="1" source="LIcoewHpS6GMWqB820lM-28" style="endArrow=open;endSize=14;edgeStyle=orthogonalEdgeStyle;strokeColor=#9A90D6;strokeWidth=1.8;rounded=1;" target="LIcoewHpS6GMWqB820lM-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LIcoewHpS6GMWqB820lM-42" edge="1" parent="1" source="LIcoewHpS6GMWqB820lM-29" style="endArrow=open;endSize=14;edgeStyle=orthogonalEdgeStyle;strokeColor=#D88966;strokeWidth=1.8;rounded=1;dashed=1;dashPattern=6 6;" target="LIcoewHpS6GMWqB820lM-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LIcoewHpS6GMWqB820lM-43" edge="1" parent="1" source="LIcoewHpS6GMWqB820lM-29" style="endArrow=open;endSize=14;edgeStyle=orthogonalEdgeStyle;strokeColor=#D88966;strokeWidth=1.8;rounded=1;dashed=1;dashPattern=6 6;" target="LIcoewHpS6GMWqB820lM-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
