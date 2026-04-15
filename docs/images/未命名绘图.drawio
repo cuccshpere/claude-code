@@ -1,62 +1,9 @@
 <mxfile host="app.diagrams.net">
-  <diagram name="第 1 页" id="KgJ4Dfn13XMWqenTKSw7">
-    <mxGraphModel dx="1605" dy="746" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+  <diagram name="第 1 页" id="MPZYmCOOzZ9CewZmlBnP">
+    <mxGraphModel>
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="XO3NIdalf-cdELc2la8k-1" parent="1" style="rounded=0;arcSize=3;fillColor=none;strokeColor=#B9B3AB;strokeWidth=1.5;pointerEvents=0;" value="" vertex="1">
-          <mxGeometry height="500" width="1614" x="440" y="260" as="geometry" />
-        </mxCell>
-        <mxCell id="XO3NIdalf-cdELc2la8k-2" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;fontStyle=1;fontSize=32;fontColor=#1F1F1C;" value="信创迁移核心工作流" vertex="1">
-          <mxGeometry height="50" width="1494" x="500" y="280" as="geometry" />
-        </mxCell>
-        <mxCell id="XO3NIdalf-cdELc2la8k-3" parent="1" style="rounded=1;whiteSpace=wrap;arcSize=50;fillColor=#F8E9E1;strokeColor=#D88966;strokeWidth=1.8;fontColor=#D88966;fontSize=20;fontStyle=1;" value="配置 Git 仓库&#xa;并 Clone" vertex="1">
-          <mxGeometry height="70" width="180" x="500" y="460" as="geometry" />
-        </mxCell>
-        <mxCell id="XO3NIdalf-cdELc2la8k-4" parent="1" style="rounded=1;whiteSpace=wrap;arcSize=10;fillColor=#E6E2DA;strokeColor=#8C867F;strokeWidth=1.8;fontColor=#2D2B28;fontSize=20;" value="全局 AST 扫描&#xa;与依赖分析" vertex="1">
-          <mxGeometry height="70" width="180" x="760" y="460" as="geometry" />
-        </mxCell>
-        <mxCell id="XO3NIdalf-cdELc2la8k-5" parent="1" style="rounded=1;whiteSpace=wrap;arcSize=10;fillColor=#EAF4FB;strokeColor=#6FA8D6;strokeWidth=1.8;fontColor=#2D2B28;fontSize=20;" value="生成可迁移项报告&#xa;(ORM/IPv6/国密)" vertex="1">
-          <mxGeometry height="70" width="180" x="1020" y="460" as="geometry" />
-        </mxCell>
-        <mxCell id="XO3NIdalf-cdELc2la8k-6" parent="1" style="rhombus;whiteSpace=wrap;fillColor=#E6D7B4;strokeColor=#BFA777;strokeWidth=1.8;fontColor=#2D2B28;fontSize=20;" value="用户勾选确认&#xa;开始迁移" vertex="1">
-          <mxGeometry height="100" width="180" x="1280" y="445" as="geometry" />
-        </mxCell>
-        <mxCell id="XO3NIdalf-cdELc2la8k-7" parent="1" style="rounded=1;whiteSpace=wrap;arcSize=10;fillColor=#D7E6DC;strokeColor=#7FB08F;strokeWidth=1.8;fontColor=#2D2B28;fontSize=20;" value="Agent 调度 Skills&#xa;批量重构代码" vertex="1">
-          <mxGeometry height="70" width="180" x="1540" y="460" as="geometry" />
-        </mxCell>
-        <mxCell id="XO3NIdalf-cdELc2la8k-8" parent="1" style="rounded=1;whiteSpace=wrap;arcSize=10;fillColor=#CFE8D7;strokeColor=#71AE88;strokeWidth=1.8;fontColor=#2D2B28;fontSize=20;" value="完成迁移&#xa;输出 Diff 审核" vertex="1">
-          <mxGeometry height="70" width="180" x="1800" y="460" as="geometry" />
-        </mxCell>
-        <mxCell id="XO3NIdalf-cdELc2la8k-9" parent="1" style="rounded=1;whiteSpace=wrap;arcSize=10;fillColor=#F3E4DA;strokeColor=#C88E6A;strokeWidth=1.8;fontColor=#2D2B28;fontSize=20;" value="上传 JAR 触发反编译&#xa;并补充分析" vertex="1">
-          <mxGeometry height="70" width="180" x="760" y="620" as="geometry" />
-        </mxCell>
-        <mxCell id="XO3NIdalf-cdELc2la8k-10" edge="1" parent="1" source="XO3NIdalf-cdELc2la8k-3" style="endArrow=open;endSize=14;edgeStyle=orthogonalEdgeStyle;strokeColor=#7A756E;strokeWidth=1.8;rounded=1;" target="XO3NIdalf-cdELc2la8k-4">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="XO3NIdalf-cdELc2la8k-11" edge="1" parent="1" source="XO3NIdalf-cdELc2la8k-4" style="endArrow=open;endSize=14;edgeStyle=orthogonalEdgeStyle;strokeColor=#7A756E;strokeWidth=1.8;rounded=1;" target="XO3NIdalf-cdELc2la8k-5">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="XO3NIdalf-cdELc2la8k-12" edge="1" parent="1" source="XO3NIdalf-cdELc2la8k-5" style="endArrow=open;endSize=14;edgeStyle=orthogonalEdgeStyle;strokeColor=#7A756E;strokeWidth=1.8;rounded=1;" target="XO3NIdalf-cdELc2la8k-6">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="XO3NIdalf-cdELc2la8k-13" edge="1" parent="1" source="XO3NIdalf-cdELc2la8k-6" style="endArrow=open;endSize=14;edgeStyle=orthogonalEdgeStyle;strokeColor=#7A756E;strokeWidth=1.8;rounded=1;" target="XO3NIdalf-cdELc2la8k-7">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="XO3NIdalf-cdELc2la8k-14" edge="1" parent="1" source="XO3NIdalf-cdELc2la8k-7" style="endArrow=open;endSize=14;edgeStyle=orthogonalEdgeStyle;strokeColor=#7A756E;strokeWidth=1.8;rounded=1;" target="XO3NIdalf-cdELc2la8k-8">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="XO3NIdalf-cdELc2la8k-15" edge="1" parent="1" source="XO3NIdalf-cdELc2la8k-7" style="endArrow=open;endSize=14;edgeStyle=orthogonalEdgeStyle;strokeColor=#8E8982;strokeWidth=1.8;rounded=1;curved=1;exitX=0.5;exitY=0;entryX=0.5;entryY=0;" target="XO3NIdalf-cdELc2la8k-5">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="1630" y="380" />
-              <mxPoint x="1110" y="380" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="XO3NIdalf-cdELc2la8k-16" edge="1" parent="1" source="XO3NIdalf-cdELc2la8k-9" style="endArrow=open;endSize=14;edgeStyle=orthogonalEdgeStyle;strokeColor=#D88966;strokeWidth=1.8;rounded=1;dashed=1;dashPattern=6 6;" target="XO3NIdalf-cdELc2la8k-4">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
